@@ -1,0 +1,157 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button {
+  border: 0;
+  outline: 0;
+  padding: 8px;
+  background: teal;
+  color: white;
+  cursor: pointer;
+  font-weight: 400;
+  height: 40px;
+  border-radius: 10px;
+}
+
+input, select {
+  width: 100%;
+  height: 40px;
+  padding: 0 10px;
+  background: whitesmoke;
+  border: 0;
+  outline: 0;
+  border-radius: 10px;
+}
+input:focus, select:focus {
+  border: 1px solid teal;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: whitesmoke;
+}
+body main {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+body main form {
+  margin: auto;
+  padding: 30px;
+  background: white;
+  border-radius: 10px;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 400px;
+}
+body main form header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+}
+body main form header span {
+  color: teal;
+  font-size: small;
+}
+body main form header h2 {
+  font-size: xx-large;
+  font-weight: 600;
+}
+body main form .userinput {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+body main form .userinput .hobby {
+  display: flex;
+  width: 100%;
+}
+body main form .userinput .hobby button {
+  width: 20%;
+}
+body main form .userinput #hobbies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+}
+body main form .userinput #hobbies .hobby-item {
+  background: #aef6f6;
+  border-radius: 5px;
+  padding: 5px;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  gap: 5px;
+}
+body main form .userinput #hobbies button {
+  background: none;
+  color: black;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 0;
+}
+body main form .userinput span {
+  color: teal;
+  font-size: small;
+}
+body .modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5019607843);
+  padding: 10px;
+}
+body .modal .modal-content {
+  background-color: #fefefe;
+  border-radius: 10px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 100%;
+  max-width: 500px;
+}
+body .modal .close-btn {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+body .modal .close-btn:hover,
+body .modal .close-btn:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+body .modal #userInfo {
+  padding-top: 10px;
+}
+body .modal #userInfo strong {
+  color: teal;
+}
+body .modal #userInfo ul {
+  list-style: none;
+  padding: 10px 0;
+  border-radius: 10px;
+  display: flex;
+  gap: 7px;
+  flex-wrap: wrap;
+}
+body .modal #userInfo ul li {
+  background: #aef6f6;
+  border-radius: 5px;
+  padding: 5px;
+}/*# sourceMappingURL=style.css.map */

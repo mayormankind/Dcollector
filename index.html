@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A user biodata collector">
+    <link rel="stylesheet" href="style.css">
+    <title>User Data Form</title>
+</head>
+<body>
+    <main class="app">
+        <!-- The form -->
+        <form action="">
+            <header class="header">
+                <span>Let us know you</span>
+                <h2>Register your self</h2>
+            </header>
+            <div class="userinput">
+                <label for="User name">Name:</label>
+                <input type="text" name="" id="name" placeholder="Enter your name...">
+            </div>
+            <div class="userinput">
+                <label for="date">D.O.B:</label>
+                <input type="date" name="" id="dob" placeholder="D.O.B">
+            </div>
+            <div class="userinput">
+                <label for="User gender">Gender:</label>
+                <select name="" id="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+            <div class="userinput">
+                <label for="hobby">Interest or Hobbies:</label>
+                <div class="hobby">
+                    <input type="text" name="" id="hobbyinput" placeholder="your hobbies...">
+                    <button id="addToHobby">Add</button>
+                </div>
+                <span>You can add more than 1 hobby</span>
+                <div id="hobbies">
+                    <!-- Empty container for liating the hobbies -->
+                </div>
+            </div>
+            <button id="submit">Submit details</button>
+        </form>
+    </main>
+
+    <!-- The modal that shows information-->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>About me</h2><hr>
+            <div id="userInfo">
+                <!-- Empty container for displaying user data -->
+            </div>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
