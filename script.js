@@ -44,7 +44,7 @@ button.addEventListener('click', (e)=> {
     const today = new Date();
     const monthDifference = today.getMonth() - dob.getMonth();
     if (dobInput) {
-        const age = today.getFullYear() - dob.getFullYear();
+        let age = today.getFullYear() - dob.getFullYear();
         if (monthDifference < 0 || (monthDifference === 0 && today.getDate() < dob.getDate())) {
             age--;
         }
